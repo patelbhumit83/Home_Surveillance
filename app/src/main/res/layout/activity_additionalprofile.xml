@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".additionalprofile"
+    android:background="@color/md_grey_100"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/rel1"
+        android:background="@drawable/xyz"
+        android:elevation="20dp">
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/logout_back"
+        android:drawableStart="@drawable/ic_chevron_left_black_24dp"
+        android:padding="5dp"
+        android:id="@+id/backbtn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Profile."
+        android:id="@+id/tvprofile"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        />
+    <View
+        android:id="@+id/SplitLine_hor1"
+        android:layout_width="30dp"
+        android:layout_height= "1dp"
+        android:background="@color/md_grey_500"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvprofile"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="120dp"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/tvname"
+        android:layout_marginRight="5dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usertype"
+        android:text="basic user"
+        android:layout_below="@+id/tvname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel1"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+            android:text="enter device number."
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/devicenumbertext"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="230dp"
+            android:layout_height="30dp"
+            android:background="@drawable/underline"
+            android:hint="type here.."
+            android:gravity="center"
+            android:textSize="15dp"
+            android:inputType="number"
+            android:id="@+id/devnumber"
+            android:layout_below="@+id/devicenumbertext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="enter device location."
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_below="@+id/devnumber"
+            android:id="@+id/devicelocationtext"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/devlocation"
+            android:layout_width="230dp"
+            android:layout_height="30dp"
+            android:background="@drawable/underline"
+            android:hint="type here.."
+            android:gravity="center"
+            android:textSize="15dp"
+            android:inputType="text"
+            android:layout_below="@+id/devicelocationtext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/img"
+
+            android:layout_width="60dp"
+
+            android:layout_height="60dp"
+
+            android:layout_centerHorizontal="true"
+
+            android:src="@drawable/profilefinal"
+
+            android:layout_below="@+id/devlocation"
+
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_centerInParent="true"
+            android:id="@+id/profileimgtext"
+            android:text="@string/additionalprofiletext"/>
+
+        <Button
+            android:id="@+id/btnhome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:drawableStart="@drawable/ic_arrow_forward_black_24dp"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/profileimgtext"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>
